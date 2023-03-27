@@ -1,0 +1,14 @@
+{% extends 'base/base.html' %}
+
+
+{% block content %}<body>
+{% for item in mascotas %}
+    <p>{{item.nombre}}</p>
+    <p>{{item.dueño}}</p>
+    <img src={{item.foto.url}} width="300">
+{% endfor %}
+</body>
+
+{% endblock content %}
+
+

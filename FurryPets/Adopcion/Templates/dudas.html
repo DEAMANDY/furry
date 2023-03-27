@@ -1,0 +1,66 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+
+<html lang="es">
+<head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/dudas.css' %}">
+    <link rel="icon" href="{% static 'img/logomini.png' %}">
+</head>
+<body>
+
+<main>
+    <section id="banner">
+        <img src="{% static 'img/gato2.jpeg' %}" width="100">
+        <div class="contenedor">
+        <h3>¿Que hacer si encuentras un peludito abandonado?</h3>
+    </div>
+    </section>
+
+    <section id="preguntas">
+
+        <h2>¿Qué hacer si encuentro un animal enfermo o abandonado?</h2>
+        <br>
+        <p>En caso de que encuentres un peludito en estas condiciones, te invitamos a unirte a esta causa.
+             Podemos darte apoyo en cuanto a consejos veterinarios, datos de profesionales, en especial consejos para la difusión de la adopción
+              por medio de nuestra web "Furry Pet Emanyep".</p>
+              <ul>
+                <li><img src="{% static 'img/patlogo.png' %}" alt="huella de perro" width="30"> Cógelo y llévalo a un veterinario urgentemente (Muchos no son caros,
+                     algunos tienen descuentos y crédito en casos de los rescatados). En muchas ocasiones, los rescatados pueden haber contraído 
+                     enfermedades graves, contagiosas y hasta mortales si no se tratan a tiempo; así que es de suma importancia llevarlo antes de
+                      permitirle contacto con otros animales.</li>
+                <li><img src="{% static 'img/patlogo.png' %}" alt="huella de perro" width="30">  Bríndale un hogar temporal asegurándote que reciba el tratamiento
+             adecuado para que se recupere.</li>
+           <li><img src="{% static 'img/patlogo.png' %}" alt="huella de perro" width="30"> Una vez esté completamente recuperado, puedes empezar a buscarle un hogar,
+             para esto tómale unas lindas fotos de su cara y cuerpo en un lugar lindo e iluminado. Te recomendamos parques, camas,
+              donde tengan un buen fondo.</li>
+           <li><img src="{% static 'img/patlogo.png' %}" alt="huella de perro" width="30">  Elige títulos o mensajes llamativos para publicar la adopción.
+             El mensaje debe describir todas sus hermosas cualidades. También toda la información del perro, edad aprox, sexo, 
+             temperamento, tamaño (Es muy importante que este castrado o esterilizado, para evitar que se repita esa misma situación 
+             una y otra vez con cada una las crías). También debes añadir a esta información: ciudad, teléfonos de contacto o correo
+              donde la gente se pueda comunicar.</li>
+           <li><img src="{% static 'img/patlogo.png' %}" alt="huella de perro" width="30">  Publica en forma constante, pues esto aumentará la probabilidad de adopción.
+             En Facebook existen muchos grupos como por ejemplo: “Salva un amigo” www.facebook.com/salvaunamigo, entre otros y también 
+             páginas para publicar.</li>
+           <li><img src="{% static 'img/patlogo.png' %}" alt="huella de perro" width="30"> Una vez que te contacte algún interesado puedes descargar el siguiente
+             cuestionario adopción y utilizarlo como una guía para analizar el adoptante, las condiciones en las que viviría y de esta forma
+              asegurarte que estás entregándolo a una persona responsable y que tiene idea del compromiso que significa adoptar.</li>
+            <h2>¿Qué hacer si encuentro un animal perdido?</h2>
+            <li><img src="{% static 'img/catanddog.png' %}" alt="huella de perro" width="30">  Retenlo, pregunta por el sector y otros lugares si pertenece a alguna familia.</li>
+            <li><img src="{% static 'img/catanddog.png' %}" alt="huella de perro" width="30"> Revisa si tiene chip para (El chip tiene la información de los dueños,
+                 para esto debes llevarlo a una veterinaria donde tengan el lector de chip).</li> 
+            <li><img src="{% static 'img/catanddog.png' %}" alt="huella de perro" width="30"> Bríndale un hogar temporal.</li>
+            <li><img src="{% static 'img/catanddog.png' %}" alt="huella de perro" width="30"> Haz unos carteles con la foto del animal, descripción,
+                 información del día y lugar donde fue encontrado, teléfono de contacto y pégalos por varios sectores y lugares concurridos.</li>
+            <li><img src="{% static 'img/catanddog.png' %}" alt="huella de perro" width="30"> Publícalo en los diferentes grupos de Facebook y redes sociales.</li>
+            <li><img src="{% static 'img/catanddog.png' %}" alt="huella de perro" width="30"> Asegúrate de difundirlo varias veces para que tenga mayor visibilidad,
+                 también revisa estas páginas para ver si su familia lo público y lo está buscando.</li>
+            <li><img src="{% static 'img/catanddog.png' %}" alt="huella de perro" width="30"> En caso que te contacten debes confirmar que sea su verdadera familia o dueño,
+                 por medio de ciertas características del perro, carnet de vacunas, fotos y nombre (al cual debe responder).</li>
+        </ul>
+    </section>
+</main>
+    
+</body>
+</html>
+{% endblock content %}

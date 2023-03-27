@@ -1,0 +1,34 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="container text-center">
+  <div class="row justify-content-center mt-5">
+    <div class="col-lg-6 col-md-8 col-sm-10">
+      <form class="p-4 p-md-5 border rounded-3 bg-light shadow" method="post">
+        {% csrf_token %}
+        <div class="form-logo">
+          <img src="{% static 'img/logomini.png' %}" width="200" alt="Logo">
+          <h2 class="form-title">Iniciar sesión</h2>
+          <hr>
+        </div>
+        <div class="mb-3">
+          <label for="{{ form.username.id_for_label }}" class="form-label">Nombre de usuario:</label>
+          <br>
+          {{ form.username }}
+        </div>
+        <div class="mb-3">
+          <label for="{{ form.password.id_for_label }}" class="form-label">Contraseña:</label>
+          <br>
+          {{ form.password }}
+        </div>
+        <div class="text-center">
+          <button type="submit" class="btn btn-warning">Iniciar sesión</button>
+        </div>
+        <hr>
+      </form>
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

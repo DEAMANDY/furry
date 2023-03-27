@@ -1,0 +1,33 @@
+{% extends 'base/base.html' %}
+
+{% block content %}
+<br>
+<br>
+<br>
+
+<body>
+  <form method="post" enctype="multipart/form-data" class="mx-auto text-center border">
+    <div class="container"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm">
+          <table class="table">
+            {% csrf_token %}
+            {{ form }}
+          </table>
+          <div class="row">
+            <div class="col-sm"></div>
+            <div class="col-sm"></div>
+            <div class="col-sm d-flex justify-content-between align-items-center">
+              <button type="submit" class="btn btn-success">Guardar</button>
+              <a href="" class="btn btn-primary">Cancelar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm"></div>
+      </div>
+    </div>
+  </form>
+</body>
+{% endblock content %}
